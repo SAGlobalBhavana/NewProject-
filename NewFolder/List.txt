@@ -2,3 +2,4 @@ Session
 Bhavana - Github 
 Manju  - API 
 Santosh - Power BI 
+Srinivas - Data
