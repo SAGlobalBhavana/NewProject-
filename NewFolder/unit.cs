@@ -19,5 +19,13 @@ namespace SeleniumTests
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize(); // Maximize the browser window
         }
+        
     }
+    
+        // Clean up by closing the browser after each test
+        [TestCleanup]
+        public void TearDown()
+        {
+            driver.Quit();
+        }
 }
