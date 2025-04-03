@@ -20,7 +20,7 @@ namespace SeleniumTests
             driver.Manage().Window.Maximize(); // Maximize the browser window
         }
         
-    }
+    
     
         // Clean up by closing the browser after each test
         [TestCleanup]
@@ -28,4 +28,5 @@ namespace SeleniumTests
         {
             driver.Quit();
         }
+    }
 }
