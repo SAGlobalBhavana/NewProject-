@@ -20,7 +20,7 @@ namespace SeleniumTests
             driver.Manage().Window.Maximize(); // Maximize the browser window
         }
 
-        // Test method for login
+      
         // Test Method for the login functionality
         [TestMethod]
         public void TestLogin()
