@@ -20,8 +20,12 @@ namespace SeleniumTests
             driver.Manage().Window.Maximize(); // Maximize the browser window
         }
 
+
+        // Test method to verify login functionality
+   
       
         // Test Method for the login functionality
+
         [TestMethod]
         public void TestLogin()
         {
@@ -40,9 +44,19 @@ namespace SeleniumTests
             var loginButton = driver.FindElement(By.Id("loginButton"));
             loginButton.Click();
 
+
+            // Clean up by closing the browser after each test
+            [TestCleanup]
+        public void TearDown()
+        {
+            driver.Quit();
+        }
+    }
+
             // Find the login button and click on it
             var loginButton = driver.FindElement(By.Id("loginButton"));
             loginButton.Click();
         }
       }
+
 }
